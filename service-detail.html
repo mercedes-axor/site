@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Teknoy hizmet detay sayfası."
+    />
+    <title>Teknoy | Hizmet Detayı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body { background: #f4f2ee; }
+      .detail-shell { padding: 3rem 0 4rem; }
+      .detail-card {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: var(--panel);
+        border-radius: 28px;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+      .detail-hero-layout {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 0;
+      }
+      .detail-content {
+        padding: 2.5rem;
+      }
+      .detail-content h1 {
+        margin: 1rem 0 0.8rem;
+        font-size: clamp(2.8rem, 4vw, 4.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+      }
+      .detail-content p, .detail-content li {
+        color: var(--muted);
+      }
+      .detail-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+      .detail-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 0 2.5rem 2.5rem;
+      }
+      .detail-panel {
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 1.5rem;
+      }
+      .detail-panel h3 {
+        margin-top: 0;
+        font-size: 1.4rem;
+      }
+      .check-list {
+        margin-top: 1rem;
+      }
+      @media (max-width: 760px) {
+        .detail-hero-layout,
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Teknoy">
+          <span class="brand-mark">T</span>
+          <span>Teknoy</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Ana menü">
+          <a href="index.html#hakkimizda">Hakkımızda</a>
+          <a href="index.html#hizmetler">Hizmetler</a>
+          <a href="index.html#cozumler">Çözümler</a>
+          <a href="index.html#projeler">Projeler</a>
+          <a href="index.html#iletisim">İletişim</a>
+        </nav>
+
+        <a href="index.html#iletisim" class="button button-primary nav-cta">Teklif Al</a>
+        <button class="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="detail-shell">
+      <div class="container">
+        <article class="detail-card reveal">
+          <div class="detail-hero-layout">
+            <div class="detail-content">
+              <span class="eyebrow">Kurumsal Web Tasarım</span>
+              <h1>Markanızın güven veren dijital yüzü.</h1>
+              <p>
+                Kurumsal web tasarım çözümümüz; güven, net iletişim ve iş hedeflerine uygun bir dijital
+                deneyim sunarak müşterilerin şirketinizi doğru şekilde anlamasını sağlar.
+              </p>
+              <div class="hero-actions">
+                <a href="index.html#iletisim" class="button button-primary">Teklif Al</a>
+                <a href="index.html#hizmetler" class="button button-secondary">Tüm Hizmetler</a>
+              </div>
+            </div>
+            <div class="detail-image">
+              <img src="assets/images/hero-corporate.jpg" alt="Kurumsal web tasarım" />
+            </div>
+          </div>
+
+          <div class="detail-grid">
+            <div class="detail-panel">
+              <h3>Hizmet kapsamı</h3>
+              <ul class="check-list">
+                <li>Kurumsal marka ve kullanıcı deneyimi analizi</li>
+                <li>İletişim, değer önerisi ve mesaj bütünlüğü oluşturma</li>
+                <li>Mobil uyumlu, hızlı ve güven veren tasarım sistemi</li>
+                <li>Lead toplama ve teklif akışları</li>
+                <li>SEO uyumlu içerik yapısı</li>
+              </ul>
+            </div>
+
+            <div class="detail-panel">
+              <h3>Sonuç</h3>
+              <p>Güçlü bir kurumsal itibar, daha yüksek güven ve yatırımcı ile müşteri odaklı dönüşüm sağlar.</p>
+              <div class="mini-metrics" style="display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:1rem; margin-top: 1.2rem;">
+                <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:0.9rem 0.6rem;text-align:center;">
+                  <strong style="display:block;font-size:1.5rem;letter-spacing:-0.05em;">+38%</strong>
+                  <span style="color: var(--muted); font-size:0.76rem;">lead artışı</span>
+                </div>
+                <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:0.9rem 0.6rem;text-align:center;">
+                  <strong style="display:block;font-size:1.5rem;letter-spacing:-0.05em;">2.7x</strong>
+                  <span style="color: var(--muted); font-size:0.76rem;">ziyaret süresi</span>
+                </div>
+                <div style="background:#fff;border:1px solid var(--line);border-radius:14px;padding:0.9rem 0.6rem;text-align:center;">
+                  <strong style="display:block;font-size:1.5rem;letter-spacing:-0.05em;">94%</strong>
+                  <span style="color: var(--muted); font-size:0.76rem;">güven</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand" aria-label="Teknoy">
+            <span class="brand-mark">T</span>
+            <span>Teknoy</span>
+          </div>
+          <p>Kurumsal dijital çözümler ve stratejik marka geliştirme partneri.</p>
+        </div>
+        <div>
+          <h3>Menü</h3>
+          <ul>
+            <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
+            <li><a href="index.html#hizmetler">Hizmetler</a></li>
+            <li><a href="index.html#projeler">Projeler</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>İletişim</h3>
+          <ul>
+              <li><a href="mailto:yamanmustafa445@gmail.com">yamanmustafa445@gmail.com</a></li>
+            <li><a href="tel:+905016098380">0501 609 8380</a></li>
+            <li>Ankara / Türkiye</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Teknoy</span>
+        <nav class="legal-links" aria-label="Yasal bilgilendirme">
+          <a href="privacy-policy.html">Gizlilik ve KVKK</a>
+          <a href="cookie-policy.html">Çerez Politikası</a>
+          <button type="button" class="cookie-settings-button">Çerez Tercihleri</button>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
